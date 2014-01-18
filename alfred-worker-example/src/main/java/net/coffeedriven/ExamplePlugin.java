@@ -9,6 +9,6 @@ public class ExamplePlugin extends AbstractWorkflowPlugin {
 
 	@Override
 	public void run(String query) throws PluginException {
-		getItemManager().addItem(new Item().setArg(query).setAutocomplete(query).setSubTitle(query).setValid(true));
+		getItemManager().addItem(new Item().setArg(query).setAutocomplete(query).setTitle(query).setValid(true).setUid(query));
 	}
 }
